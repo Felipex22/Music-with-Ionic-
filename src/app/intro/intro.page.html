@@ -1,0 +1,20 @@
+<ion-content class="custom-bg-color">
+
+  <ion-icon name="arrow-undo-outline" (click)="close()"></ion-icon>
+
+  <swiper-container class="sp-bg-color">
+    
+    <swiper-slide *ngFor="let slide of slides">
+      
+      <h2>{{slide.title}}</h2>
+      <img src="{{slide.img}}" alt="img">
+      <p>{{slide.description}}</p>
+      <ion-icon name="{{slide.icon}}"></ion-icon>
+     
+    </swiper-slide>
+
+  </swiper-container>
+
+
+</ion-content>
+

@@ -1,0 +1,40 @@
+swiper-container {
+
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  swiper-slide {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-bg-color{
+  
+    --background: linear-gradient(45deg, rgb(58, 26, 201), purple);
+  
+  }
+  
+  .sp-bg-color {
+  
+    background: linear-gradient(45deg, rgb(58, 26, 201), purple);
+  
+  
+  }
+  
+  ion-avatar{
+  
+   --border-radius: 50%;
+  
+  }
+  
+  img {
+  
+   padding: 20px;
+  
+  }

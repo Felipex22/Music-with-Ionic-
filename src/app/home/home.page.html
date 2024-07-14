@@ -1,17 +1,21 @@
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+</head>
+
 <ion-content class="custom-bg-color">
 
-  <swiper-container class="sp-bg-color">
+    <swiper-container>
 
-    <swiper-slide *ngFor="let slide of slides">
-      
-      <h2>{{slide.title}}</h2>
-      <img src="{{slide.img}}" alt="img">
-      <p>{{slide.description}}</p>
-      <ion-icon name="{{slide.icon}}"></ion-icon>
-     
-    </swiper-slide>
+        <ion-title class="bona-nova-sc-regular-italic"> Merge music </ion-title>
+        <ion-icon name="disc-outline" (click)="open()" ></ion-icon>
 
-  </swiper-container>
+    </swiper-container>
+
+ 
 
 
 </ion-content>

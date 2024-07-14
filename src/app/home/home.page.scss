@@ -1,40 +1,29 @@
-swiper-container {
-
-  width: 100%;
-  height: 100%;
-}
-
-
-
-swiper-slide {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+.bona-nova-sc-regular-italic {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+  }
+  
 
 .custom-bg-color{
 
-  --background: grey;
-
+    --background-color: grey;
 }
 
-.sp-bg-color {
-
-  background: linear-gradient(45deg, rgb(58, 26, 201), purple);
-
-
+swiper-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, rgb(58, 26, 201), purple);
 }
 
-ion-avatar{
 
- --border-radius: 50%;
-
+ion-title{
+    text-align: center;
+    margin: 20px;
 }
 
-img {
-
- padding: 20px;
-
-}

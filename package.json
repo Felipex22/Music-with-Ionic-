@@ -27,6 +27,7 @@
     "@capacitor/keyboard": "6.0.1",
     "@capacitor/status-bar": "6.0.0",
     "@ionic/angular": "^8.2.5",
+    "@ionic/storage-angular": "^4.0.0",
     "@ionic/vue": "^8.2.5",
     "@ionic/vue-router": "^8.2.5",
     "ionicons": "^7.0.0",
