@@ -1,0 +1,57 @@
+<ion-content class="custom-content" [fullscreen]="true" >
+
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="ion-text-center">Iniciar Sesion</ion-title>
+  </ion-toolbar>
+  
+  <div class="loginImage">
+
+    <ion-img src="https://img.icons8.com/?size=100&id=GSD31ac0HNVl&format=png&color=000000" alt="Logo"> </ion-img>
+
+  </div>
+
+  <form [formGroup]="loginForm" (ngSubmit)="(loginUser(loginForm.value))">
+        
+    <ion-item class="custom-loginInput">
+      <ion-input  type="email" label="Email" labelPlacement="floating" placeholder="Enter email" formControlName="email"></ion-input>
+    </ion-item>
+    
+    <div class="validation_messages">
+      <ng-container *ngFor="let validation of validation_messages.email" >
+        <div *ngIf="
+          (loginForm.get('email')?.hasError(validation.type) && 
+          loginForm.get('email')?.dirty)" class="validation-message">
+            {{validation.message}}
+        </div>
+      </ng-container>
+    </div>
+
+    
+      <ion-input  type="password" label="" placeholder="password" formControlName="password">
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+     
+
+    <div class="validation_messages">
+      <ng-container *ngFor="let validation of validation_messages.password" >
+        <div *ngIf="
+          (loginForm.get('password')?.hasError(validation.type) && 
+          loginForm.get('password')?.dirty)" class="validation-message">
+           {{validation.message}}
+        </div>
+      </ng-container>
+    </div>
+
+    <ion-button 
+      (click)="presentToast('bottom')"
+      type="submit"
+      [disabled]="!loginForm.valid"
+      color="light">
+          Login
+    </ion-button>
+    
+  </form>
+
+  <ion-text class="custom-text" (click)="gotoRegister()"> Sign up here </ion-text>
+
+</ion-content>

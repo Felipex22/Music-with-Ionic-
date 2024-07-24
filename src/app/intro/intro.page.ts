@@ -55,6 +55,13 @@ export class IntroPage implements OnInit {
 
       this.storage.set("isIntroShowed",true)
       this.router.navigateByUrl("/home")
+      
+  }
+
+  gotoLogin(){
+
+    this.router.navigateByUrl("/login")
+
   }
 
 }

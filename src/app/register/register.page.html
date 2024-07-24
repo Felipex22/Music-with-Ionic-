@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons>
+      <ion-button (click)="gotoLogin()">
+        <ion-icon name="arrow-back-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-content" [fullscreen]="true">
+  <figure class="logoImg">
+    <img src="https://img.icons8.com/?size=100&id=GSD31ac0HNVl&format=png&color=000000" alt="Presentation">
+  </figure>
+
+  <form [formGroup]="register" (ngSubmit)="registerForm(register.value)">
+
+     
+        <ion-item class="custom-loginInput">
+          <ion-input placeholder="First Name" formControlName="name" ></ion-input>
+        </ion-item>
+    
+        <ion-item class="custom-loginInput">
+          <ion-input placeholder="Last Name" formControlName="last_name"></ion-input>
+        </ion-item>
+    
+        <ion-item class="custom-loginInput">
+          <ion-input type="password" placeholder="Password" value="" formControlName="password">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+        
+        <ion-icon id="open-toast" name="information-circle-sharp"></ion-icon>
+        <ion-toast
+          position = "middle"
+          trigger="open-toast"
+          [duration]="5000"
+          message ="{{pswdFormatMessage}}"
+          class="custom-toast"
+        ></ion-toast>
+
+        <ion-item class="custom-loginInput">
+          <ion-input  type="password" placeholder="Repeat Password" value="" formControlName="password_confirmation">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+    
+        <ion-item class="custom-loginInput">
+          <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+        </ion-item>    
+     
+    
+        <ion-button class="custom-register-button" type="submit"
+          shape="round"
+          color="success"
+          [disabled]="!register.valid"
+          
+        >
+              Register
+
+        </ion-button>
+  </form>
+
+</ion-content>

@@ -7,7 +7,7 @@
     <swiper-slide *ngFor="let slide of slides">
       
       <h2>{{slide.title}}</h2>
-      <img src="{{slide.img}}" alt="img">
+      <img src="{{slide.img}}" alt="img" (click)="gotoLogin()">
       <p>{{slide.description}}</p>
       <ion-icon name="{{slide.icon}}"></ion-icon>
      

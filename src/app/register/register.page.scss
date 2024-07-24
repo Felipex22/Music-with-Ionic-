@@ -1,0 +1,56 @@
+.custom-content{
+
+    --background:linear-gradient(45deg, rgb(58, 26, 201), purple);
+
+}
+
+.custom-toolbar{
+
+    --background: linear-gradient(45deg, rgb(28, 4, 160), purple);;
+}
+
+.custom-loginInput{
+
+    --background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputs_position{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoImg{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+   
+    
+}
+
+.custom-register-button{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+ion-icon{
+
+    margin-left: 10px;
+    
+}
