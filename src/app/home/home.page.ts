@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginPage } from '../login/login.page';
+import { Storage } from '@ionic/storage-angular';
+
 
 @Component({
   selector: 'app-home',
@@ -8,18 +11,23 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  
+  artists = [
 
-  constructor(private router: Router) {
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+    
 
+
+  constructor() {
 
   }
 
-
-  open(){
-
-    this.router.navigateByUrl("/intro")
-
-  }
 
 }

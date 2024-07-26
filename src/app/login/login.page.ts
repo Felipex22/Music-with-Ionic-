@@ -58,8 +58,8 @@ export class LoginPage implements OnInit {
 
       this.authservice.loginUser(dataLogin).then(res => {
         
-        this.storage.set("login",true)
-        this.navCtrl.navigateForward("/home");
+        this.storage.set("isUserLoggedIn",true)
+        this.navCtrl.navigateForward("menu/home");
 
       }).catch(err => {
         
@@ -73,6 +73,7 @@ export class LoginPage implements OnInit {
       duration: 2000,
       position: position,
     });
+
 
     await toast.present();
   }

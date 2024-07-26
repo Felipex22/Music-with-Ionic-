@@ -16,13 +16,13 @@ swiper-container {
   
   .custom-bg-color{
   
-    --background: linear-gradient(45deg, rgb(58, 26, 201), purple);
+    --background: linear-gradient(to top, #1473de, #2e61ca, #3a4eb6, #413ca0, #44298b, #411f7b, #3e156c, #390a5d, #320b51, #2b0b44, #240b38, #1e092d);
   
   }
   
   .sp-bg-color {
   
-    background: linear-gradient(45deg, rgb(58, 26, 201), purple);
+    --background: transparent;
   
   
   }

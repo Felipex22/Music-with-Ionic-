@@ -1,0 +1,25 @@
+<ion-split-pane>
+  <ion-menu contentId="content" side="start">
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons>
+              <ion-title>Menu</ion-title>
+              <ion-button (click)="closeMenu()">
+                <ion-icon name="close-sharp"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-item>
+        <ion-icon name="log-out-sharp" slot="end" (click)="logout()"></ion-icon>
+        Log out
+      </ion-item>
+      
+
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-split-pane>
+
