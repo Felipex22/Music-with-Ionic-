@@ -19,10 +19,10 @@
 
     <h1>Artists</h1>
     <swiper-container slides-per-view="4" speed="400">
-        <swiper-slide *ngFor="let artist of artists">
-            <ion-avatar>
-                <img src="https://images-prod.dazeddigital.com/600/0-565-1890-1260/azure/dazed-prod/1330/7/1337869.jpg"/>
-                <span>Mac DeMarco</span>
+        <swiper-slide *ngFor="let artists of artists">
+            <ion-avatar (click)="showSongs(artists)">
+                <img src="{{artists.image}}"/>
+                <span>{{artists.name}}</span>
             </ion-avatar>
         </swiper-slide>
     </swiper-container>
